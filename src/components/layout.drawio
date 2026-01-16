@@ -1,0 +1,88 @@
+<mxfile host="65bd71144e">
+    <diagram id="8CI3YCxGmtOWZA27nWh2" name="Page-1">
+        <mxGraphModel dx="530" dy="1537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeWidth=5;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="160" width="360" height="1640" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="layer 1: gambar bayi 100vh&lt;div&gt;layer 2: gradasi fade&lt;/div&gt;&lt;div&gt;layer 3: desc in (h1+kepada+btn)&lt;/div&gt;&lt;div&gt;layer 4: if btn click=&amp;gt; h1 + p(tgl) )&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="160" width="360" height="410" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="430" width="360" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="5" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="aksara bali" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="450" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="asungkerta waranugraha blablabla" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="490" width="230" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="bayi (3 bergantian muncul)" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="290" y="550" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="nama | nama | nama" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="650" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="kembar3 dari pasangan&lt;br&gt;&amp;lt;span&amp;gt;&amp;nbsp; nama&lt;br&gt;&amp;amp;&lt;br&gt;nama" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="275" y="695" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="bait bhagavadgita 3:11" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="780" width="360" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="880" width="360" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="tgl" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="930" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="waktu" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="930" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="acara kami:" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="290" y="890" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="countdown" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="1050" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="gallery" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="1100" width="360" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="1200" width="360" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="buku tamu" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="315" y="1210" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="nama: ______________" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="1240" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="harapan: ______________" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="195" y="1270" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="O kehadiran" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="1300" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="send" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="1340" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="komentar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="1380" width="330" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="logo react" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="290" y="1490" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="disclaimer: bla bla ini hanya prank&lt;br&gt;insta | wa&lt;br&gt;copyright" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="1570" width="350" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="maps" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="275" y="1010" width="120" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

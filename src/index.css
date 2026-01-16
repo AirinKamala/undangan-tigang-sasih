@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Paprika&family=Parisienne&family=Style+Script&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+  --text-shadow-zero :0px 0px 9px oklch(77.7% 0.152 181.912);
+}
+
+#root{
+  background-color: rgb(245, 245, 220);
+}
+
+button:hover, button:focus{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px oklch(82.8% 0.189 84.429);
+}
+.paprika {
+  font-family: "Paprika", system-ui;
+}
+
+
+.style-script-regular {
+  font-family: "Style Script", cursive;
+}
+.parisienne {
+  font-family: "Parisienne", cursive;
+}
+h2{
+  font-size: 36pt;
+}
+h3{
+  font-size: 30pt;
+}
+h4{
+  font-size: 24pt;
+}
+
+input, select, textarea{
+  background-color: white;
+  border-radius: 10px;
+  padding: 4px 12px;
+  margin: 8px;
+  min-width: 12rem;
+  width: auto;
+  min-height: fit-content;
+
+}
