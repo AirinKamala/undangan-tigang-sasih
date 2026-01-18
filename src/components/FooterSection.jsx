@@ -8,8 +8,8 @@ export default function Footer() {
 
                 <p className="text-lg paprika mt-4 ">Disclaimer: Ini hanya untuk guyonan belaka, nama, tokoh, dan peristiwa di dalamnya hanyalah fiktif.</p>
                 <div id="social" className="flex justify-center-safe my-8">
-                    <a href=""><i className="text-[24pt] fa-brands fa-instagram"></i></a>
-                    <a href=""><i className="text-[24pt] fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/kamalaairin/" target="_blank"><i className="text-[24pt] fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/6287796730344" target="_blank"><i className="text-[24pt] fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
             <hr />

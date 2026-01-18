@@ -12,7 +12,7 @@ function Kitab() {
     useGSAP(() => {
         gsap.from(containerKitab.current, {
             y: 100, opacity:0, duration: 1, ease: "linear",
-            scrollTrigger: { trigger: containerKitab.current, start: 'top 90%', end: 'top 50%', toggleActions: 'play none none reverse', markers: true }
+            scrollTrigger: { trigger: containerKitab.current, start: 'top 80%', end: 'top 50%', toggleActions: 'play none none reverse', markers: true }
         });
     }, containerKitab);
 
@@ -54,7 +54,7 @@ function Detail() {
     useGSAP(() => {
         gsap.from(containerDetail.current, {
             y: 100, opacity:0, duration: 1, ease: "linear",
-            scrollTrigger: { trigger: containerDetail.current, start: 'top 90%', end: 'top 50%', toggleActions: 'play none none reverse', markers: true }
+            scrollTrigger: { trigger: containerDetail.current, start: 'top 80%', end: 'top 50%', toggleActions: 'play none none reverse', markers: true }
         });
     }, containerDetail);
 
@@ -88,7 +88,7 @@ function Coundown() {
     useGSAP(() => {
         gsap.from(containerTimer.current, {
             y: 100, opacity:0, duration: 1, ease: "linear",
-            scrollTrigger: { trigger: containerTimer.current, start: 'top 90%', end: 'top 50%', toggleActions: 'play none none reverse', markers: true }
+            scrollTrigger: { trigger: containerTimer.current, start: 'top 80%', end: 'top 50%', toggleActions: 'play none none reverse', markers: true }
         });
     }, containerTimer);
     const targetTgl = new Date('Feb 1, 2026 12:00:00').getTime();
