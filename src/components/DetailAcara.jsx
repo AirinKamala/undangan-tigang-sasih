@@ -19,7 +19,7 @@ function Kitab() {
 
     return (
         <section className="py-20 justify-center-safe italic " ref={containerKitab}>
-            <blockquote className="p-8 mx-auto size-fit paprika leading-8 border-l-4 border-teal-500 shadow-2xl rounded-sm">
+            <blockquote className="p-8 mx-auto size-fit paprika leading-8 border-l-4 border-[#87CEEB] shadow-2xl rounded-sm">
                 <p>devān bhāvayatānena <br />
                     te devā bhāvayantu vaḥ <br />
                     parasparaḿ bhāvayantaḥ <br />
@@ -63,11 +63,11 @@ function Detail() {
             <h2 className="style-script-regular">Acara Kami</h2>
             <div id="container2" className="flex justify-center-safe p-8">
                 <div className="w-52 h-52 shadow-2xl grid items-center m-2 bg-white rounded-2xl">
-                    <i className="fa-solid fa-calendar text-[60pt] text-teal-600 mx-auto"></i>
+                    <i className="fa-solid fa-calendar text-[60pt] text-[#2090EB] mx-auto"></i>
                     <p className="font-bold paprika text-[16pt]">1 Februari 2026</p>
                 </div>
                 <div className="w-52 h-52 shadow-2xl grid items-center m-2 bg-white rounded-2xl">
-                    <i className="fa-solid fa-clock text-[60pt] text-teal-600 mx-auto"></i>
+                    <i className="fa-solid fa-clock text-[60pt] text-[#2090EB] mx-auto"></i>
                     <p className="font-bold paprika text-[16pt]">12:00 - Selesai </p>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import InfoBayi from './components/InfoBayi'
 import BukuTamu from './components/BukuTamu'
 import FooterSection from './components/FooterSection'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import GallerySection from './components/GallerySection'
 
 function HomePage({nama}) {
   const undangan = nama
@@ -12,6 +13,7 @@ function HomePage({nama}) {
       <FirstPage nama={undangan} />
       <main className="mx-[5vw] md:mx-[10vw] h-auto lg:mx-[25vw]">
         <InfoBayi className="mt-20" id="info" />
+        <GallerySection />
         <DetailAcara />
         <BukuTamu />
       </main>
@@ -34,6 +36,24 @@ function App() {
     </>
   )
 }
+
+// function App() {
+//   return (
+//     <>
+//     <div className='bg-orange-50 h-auto pt-4' id="containerApp">
+//        {/* <FirstPage nama={'teman-teman'} /> */}
+//        <main className="mx-[5vw] md:mx-[10vw] h-auto lg:mx-[25vw]">
+//          {/* <InfoBayi className="mt-20" id="info" />
+//          <DetailAcara /> */}
+//          <GallerySection />
+//          <BukuTamu />
+//        </main>
+//        <FooterSection />
+//      </div >
+
+//     </>
+//   )
+// }
 
 export default App
 

@@ -1,7 +1,9 @@
 import { useEffect, useState, useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-
+import threeKitten from './assetImage/threeKitten.jpeg'
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+gsap.registerPlugin(ScrollToPlugin);
 gsap.registerPlugin(useGSAP);
 
 function Navbar() {
@@ -46,7 +48,9 @@ export default function FirstPage({ nama }) {
     const name = nama;
     const [isOpen, setIsOpen] = useState(false);
     const boxRef = useRef();
-
+    const handleScroll = () => {
+        gsap.to(window, {duration:2, scrollTo: '#info-bayi', ease: 'power2.inOut'});
+    }
     useEffect(() => {
         let gsapvar = gsap.context(() => {
             gsap.from(boxRef.current, { y: 100, scale: .2, duration: 1, ease: "back.out(1.7)" });
@@ -62,13 +66,13 @@ export default function FirstPage({ nama }) {
             <header className="h-screen w-screen bg-[rgb(245, 245, 220)]" ref={boxRef}>
                 <div id="img-baby" className="absolute z-0 inset-0 overflow-hidden">
                     <img
-                        className="absolute h-screen w-auto md:w-full md:h-auto object-cover object-center"
-                        src="./src/assets/kitten.jpeg"
+                        className="absolute h-screen w-auto md:w-full md:h-auto object-cover object-center md:object-bottom"
+                        src={threeKitten}
                         alt=""
                     />
                     <div
                         id="fade"
-                        className="relative z-3 h-full bg-linear-to-t from-gray-950 to-transparent text-white"
+                        className="relative z-3 h-full bg-linear-to-t from-gray-950 via-70% via-transparent to-transparent brightness- text-white"
                     ></div>
                 </div>
                 <div id="desc" className="absolute z-2 h-[80vh] bottom-0 w-screen flex flex-col justify-center text-white">
@@ -85,9 +89,9 @@ export default function FirstPage({ nama }) {
                     </>
                     )}
                     {isOpen && (<>
-                        <p className="font-bold max-w-fit text-center text-2xl flex mx-auto border-b-amber-50 border-b-3">17 Agustus 2026</p>
+                        <p className="font-bold max-w-fit text-center text-2xl flex mx-auto border-b-amber-50 border-b-3">1 Februari 2026</p>
                         <a href="#" className=" mx-auto text-4xl mt-16 animate-bounce">
-                            <i class="fa-solid fa-arrow-down"></i>
+                            <i onClick={handleScroll} class="fa-solid fa-arrow-down"></i>
                         </a>
                     </>
                     )}

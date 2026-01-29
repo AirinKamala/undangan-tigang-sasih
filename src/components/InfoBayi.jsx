@@ -1,6 +1,10 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import miuphoto from './assetImage/miuphoto.jpeg'
+import dodoPhoto from './assetImage/dodoPhoto.jpeg'
+import gembulPhoto from './assetImage/gembulPhoto.jpeg'
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -12,12 +16,12 @@ export default function InfoBayi() {
 
 
     const images = [
-        'src/assets/kiten3.jpg',
-        'src/assets/kitten.jpeg',
-        'src/assets/kiten1.jpeg',
-        'src/assets/kiten3.jpg',
-        'src/assets/kitten.jpeg',
-        'src/assets/kiten1.jpeg',
+        gembulPhoto,
+        miuphoto,
+        dodoPhoto,
+        gembulPhoto,
+        miuphoto,
+        dodoPhoto,
     ]
 
     useEffect(() => {
@@ -68,7 +72,7 @@ export default function InfoBayi() {
 
     return (
         <>
-            <section className="w-full h-auto text-center my-[20vh] paprika text-sm" ref={containerRef}>
+            <section className="w-full h-auto text-center my-[20vh] paprika text-sm" id="info-bayi" ref={containerRef}>
                 <div ref={textIn} id="astungkara">
                     <h1 className="in-text text-6xl parisienne font-black py-2 text-shadow-lg text-orange-800">Om Swastiastu</h1>
                     <p className="italic px-[15vw]">Atas Asung Kertha Wara Nugraha Ida Sang Hyang Widhi Wasa/Tuhan Yang Maha Esa kami bermaksud mengundang Bapak/Ibu/Saudara/i pada Upacara Manusa Yadnya Tigang Sasih (3 Bulanan) anak kami.</p>
