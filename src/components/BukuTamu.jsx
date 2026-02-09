@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from 'gsap';
 import { useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from "react";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -23,17 +24,27 @@ function BukuTamu() {
         });
     }, bukuTamu);
 
-    const [listKomen, setListKomen] = useState([{ nama: 'Bu kadek', pesan: 'Rahayu', kehadiran: 'Hadir' }, { nama: 'Yan Dodi', pesan: 'Siap hadir', kehadiran: 'Hadir' },{ nama: 'Pak mang ', pesan: 'Ampura ten nyidng hadir', kehadiran: 'Tidak Hadir' }]);
+    const [listKomen, setListKomen] = useState(()=> {
+        let savedComment = localStorage.getItem('bukuTamu');
+        return savedComment ? JSON.parse(savedComment) : [
+            { nama: 'Bu kadek', pesan: 'Rahayu', kehadiran: 'Hadir' }, 
+            { nama: 'Yan Dodi', pesan: 'Siap hadir', kehadiran: 'Hadir' },
+            { nama: 'Pak mang ', pesan: 'Ampura ten nyidng hadir', kehadiran: 'Tidak Hadir' }
+        ]
+    });
+
+    useEffect(()=> {
+        localStorage.setItem('bukuTamu', JSON.stringify(listKomen));
+    }, [listKomen]);
+    // const [listKomen, setListKomen] = useState([{ nama: 'Bu kadek', pesan: 'Rahayu', kehadiran: 'Hadir' }, { nama: 'Yan Dodi', pesan: 'Siap hadir', kehadiran: 'Hadir' },{ nama: 'Pak mang ', pesan: 'Ampura ten nyidng hadir', kehadiran: 'Tidak Hadir' }]);
     const addKomen = (e) => {
         e.preventDefault();
-
-
         const nama = e.target.nama.value;
         const pesan = e.target.pesan.value;
         const kehadiran = e.target.kehadiran.value;
 
 
-        setListKomen([...listKomen, { nama, pesan, kehadiran }]);
+        setListKomen([{ nama, pesan, kehadiran },...listKomen]);
         e.target.reset();
     }
 
