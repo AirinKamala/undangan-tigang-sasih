@@ -36,7 +36,6 @@ function BukuTamu() {
     useEffect(()=> {
         localStorage.setItem('bukuTamu', JSON.stringify(listKomen));
     }, [listKomen]);
-    // const [listKomen, setListKomen] = useState([{ nama: 'Bu kadek', pesan: 'Rahayu', kehadiran: 'Hadir' }, { nama: 'Yan Dodi', pesan: 'Siap hadir', kehadiran: 'Hadir' },{ nama: 'Pak mang ', pesan: 'Ampura ten nyidng hadir', kehadiran: 'Tidak Hadir' }]);
     const addKomen = (e) => {
         e.preventDefault();
         const nama = e.target.nama.value;
