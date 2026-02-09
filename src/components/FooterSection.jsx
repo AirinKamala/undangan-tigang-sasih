@@ -1,9 +1,11 @@
+import reactLogo from 'src/assets/react.svg'
+
 export default function Footer() {
     return (
         <footer className="bg-stone-900 text-center py-4 flex justify-center flex-col text-white w-screen min-h-48 ">
             <div className="px-12 md:px-16 ">
                 <picture className="flex mx-auto  justify-center p-4">
-                    <img src="src/assets/react.svg" alt="React logo" className="w-auto h-[20vh]" />
+                    <img src={reactLogo} alt="React logo" className="w-auto h-[20vh]" />
                 </picture>
 
                 <p className="text-lg paprika mt-4 ">Disclaimer: Ini hanya untuk guyonan belaka, nama, tokoh, dan peristiwa di dalamnya hanyalah fiktif.</p>

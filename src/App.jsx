@@ -5,6 +5,7 @@ import BukuTamu from './components/BukuTamu'
 import FooterSection from './components/FooterSection'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import GallerySection from './components/GallerySection'
+import NotFound from './components/NotFound'
 
 
 function HomePage({ nama }) {
@@ -34,6 +35,7 @@ function App() {
           <Route path="/mb-nia" element={<HomePage nama={'Mb Nia'} />} />
           <Route path="/kak-tria" element={<HomePage nama={'Kak Tria'} />} />
           <Route path="/anakk-imoett" element={<HomePage nama={'Anakk" imoett'} />} />
+          <Route path="/*" element={<NotFound />} />
 
         </Routes>
       </Router>
