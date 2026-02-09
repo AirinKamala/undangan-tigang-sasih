@@ -1,73 +1,84 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/index.css" rel="preconnect">
-    <script src="https://kit.fontawesome.com/351ddffa70.js" rel="preconnect" defer crossorigin="anonymous"></script>
-    <title>app-react</title>
-    <style>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Paprika&family=Parisienne&family=Style+Script&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/351ddffa70.js" rel="preconnect" defer crossorigin="anonymous"></script>
+  <title>app-react</title>
+  <style>
+    @import "tailwindcss";
+
+    @theme {
+      --text-shadow-zero: 0px 0px 9px oklch(77.7% 0.152 181.912);
+      --breakpoint-xs: 10rem;
+    }
+
+    #root {
+      background-color: rgb(245, 245, 220);
+      color: #2C3E50;
+    }
+
+    button:hover,
+    button:focus {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 20px oklch(82.8% 0.189 84.429);
+    }
+
+    .no-hover:hover {
+      box-shadow: none;
+      transform: none;
+    }
+
+    .paprika {
+      font-family: "Paprika", system-ui;
+      font-display: swap;
+    }
 
 
-#root {
-  background-color: rgb(245, 245, 220);
-  color: #2C3E50;
-}
+    .style-script-regular {
+      font-family: "Style Script", cursive;
+    }
 
-button:hover,
-button:focus {
-  transform: scale(1.05);
-  box-shadow: 0px 0px 20px oklch(82.8% 0.189 84.429);
-}
+    .parisienne {
+      font-family: "Parisienne", cursive;
+    }
 
-.no-hover:hover {
-  box-shadow: none;
-  transform: none;
-}
+    h2 {
+      font-size: 36pt;
+    }
 
-.paprika {
-  font-family: "Paprika", system-ui;
-  font-display: swap;
-}
+    h3 {
+      font-size: 30pt;
+    }
 
+    h4 {
+      font-size: 24pt;
+    }
 
-.style-script-regular {
-  font-family: "Style Script", cursive;
-}
+    input,
+    select,
+    textarea {
+      background-color: white;
+      border-radius: 10px;
+      padding: 4px 12px;
+      margin: 8px;
+      min-width: 12rem;
+      width: auto;
+      min-height: fit-content;
 
-.parisienne {
-  font-family: "Parisienne", cursive;
-}
+    }
+  </style>
+</head>
 
-h2 {
-  font-size: 36pt;
-}
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 
-h3 {
-  font-size: 30pt;
-}
-
-h4 {
-  font-size: 24pt;
-}
-
-input,
-select,
-textarea {
-  background-color: white;
-  border-radius: 10px;
-  padding: 4px 12px;
-  margin: 8px;
-  min-width: 12rem;
-  width: auto;
-  min-height: fit-content;
-
-}
-    </style>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
 </html>
