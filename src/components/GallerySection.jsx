@@ -1,7 +1,7 @@
-import threeKitten from './assetImage/threeKitten.jpeg';
-import miuphoto from './assetImage/miuphoto.jpeg';
-import dodoPhoto from './assetImage/dodoPhoto.jpeg';
-import gembulPhoto from './assetImage/gembulPhoto.jpeg';
+import threeKitten from './assetImage/threeKitten.webp';
+import miuphoto from './assetImage/miuphoto.webp';
+import dodoPhoto from './assetImage/dodoPhoto.webp';
+import gembulPhoto from './assetImage/gembulPhoto.webp';
 
 function GallerySection() {
     return (

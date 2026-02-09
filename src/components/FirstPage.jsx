@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import threeKitten from './assetImage/threeKitten.jpeg'
+import threeKitten from './assetImage/threeKitten.webp'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
 gsap.registerPlugin(ScrollToPlugin);

@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import miuphoto from './assetImage/miuphoto.jpeg'
-import dodoPhoto from './assetImage/dodoPhoto.jpeg'
-import gembulPhoto from './assetImage/gembulPhoto.jpeg'
+import miuphoto from './assetImage/miuphoto.webp'
+import dodoPhoto from './assetImage/dodoPhoto.webp'
+import gembulPhoto from './assetImage/gembulPhoto.webp'
 
 
 gsap.registerPlugin(ScrollTrigger);
