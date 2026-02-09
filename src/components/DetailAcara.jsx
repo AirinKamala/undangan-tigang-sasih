@@ -37,9 +37,9 @@ function Kitab() {
 function Maps() {
     return (
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31560.312847328354!2d115.06953540000002!3d-8.592238649999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23738397832e5%3A0x3825e71b720cf6f5!2sPantai%20Yeh%20Gangga!5e0!3m2!1sen!2sid!4v1768144075656!5m2!1sen!2sid"
-            width="300" height="200"
+            
             style={{ border: 0 }}
-            className="mx-auto"
+            className="mx-auto w-[90%]"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
@@ -62,13 +62,13 @@ function Detail() {
         <section className="py-8 text-center" ref={containerDetail}>
             <h2 className="style-script-regular">Acara Kami</h2>
             <div id="container2" className="flex justify-center-safe p-8">
-                <div className="w-52 h-52 shadow-2xl grid items-center m-2 bg-white rounded-2xl">
-                    <i className="fa-solid fa-calendar text-[60pt] text-[#2090EB] mx-auto"></i>
-                    <p className="font-bold paprika text-[16pt]">11 Februari 2026</p>
+                <div className="w-52 h-52 shadow-2xl grid items-center m-2 p-2 bg-white rounded-2xl">
+                    <i className="fa-solid fa-calendar text-[40pt] sm:text-[60pt] text-[#2090EB] mx-auto"></i>
+                    <p className="font-bold paprika text-[12pt] sm:text-[16pt]">11 Februari 2026</p>
                 </div>
-                <div className="w-52 h-52 shadow-2xl grid items-center m-2 bg-white rounded-2xl">
-                    <i className="fa-solid fa-clock text-[60pt] text-[#2090EB] mx-auto"></i>
-                    <p className="font-bold paprika text-[16pt]">12:00 - Selesai </p>
+                <div className="w-52 h-52 shadow-2xl grid items-center m-2 p-2 bg-white rounded-2xl">
+                    <i className="fa-solid fa-clock text-[40pt] sm:text-[60pt] text-[#2090EB] mx-auto"></i>
+                    <p className="font-bold paprika text-[12pt] sm:text-[16pt]">12:00 - Selesai </p>
                 </div>
             </div>
 
@@ -141,11 +141,11 @@ function Coundown() {
     return (
         <section ref={containerTimer}>
             <h4 className="pt-8 mt-8 paprika text-center flex justify-evenly"> Acara Dimulai Dalam </h4>
-            <h4 className="mt-8 p-8 paprika text-center flex justify-evenly">
-                <span className="mx-2 text-[14pt] md:text-[20pt]" id="days">{String(timeLeft.days).padStart(2, '0')} <br /> Days</span>:
-                <span className="mx-2 text-[14pt] md:text-[20pt]" id="hours">{String(timeLeft.hours).padStart(2, '0')} <br /> Hours</span>:
-                <span className="mx-2 text-[14pt] md:text-[20pt]" id="minutes">{String(timeLeft.minutes).padStart(2, '0')} <br /> Minutes</span>:
-                <span className="mx-2 text-[14pt] md:text-[20pt]" id="seconds"> {String(timeLeft.seconnds).padStart(2, '0')} <br /> Seconnds</span>
+            <h4 className="mt-8 paprika text-center flex justify-evenly">
+                <span className="self-center text-sm sm:text-2xl " id="days">{String(timeLeft.days).padStart(2, '0')}<br /> Days</span>:
+                <span className="self-center text-sm sm:text-2xl " id="hours">{String(timeLeft.hours).padStart(2, '0')}<br /> Hours</span>:
+                <span className="self-center text-sm sm:text-2xl " id="minutes">{String(timeLeft.minutes).padStart(2, '0')}<br /> Minutes</span>:
+                <span className="self-center text-sm sm:text-2xl " id="seconds"> {String(timeLeft.seconnds).padStart(2, '0')}<br /> Seconds</span>
             </h4>
         </section>
 

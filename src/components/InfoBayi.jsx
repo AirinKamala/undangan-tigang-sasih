@@ -75,7 +75,7 @@ export default function InfoBayi() {
                     <h1 className="in-text text-6xl parisienne font-black py-2 text-shadow-lg text-orange-800">Om Swastiastu</h1>
                     <p className="italic px-[15vw]">Atas Asung Kertha Wara Nugraha Ida Sang Hyang Widhi Wasa/Tuhan Yang Maha Esa kami bermaksud mengundang Bapak/Ibu/Saudara/i pada Upacara Manusa Yadnya Tigang Sasih (3 Bulanan) anak kami.</p>
                 </div>
-                <div id="circle" className="size-72 mx-auto my-[5vh] shadow-2xl rounded-full overflow-hidden relative">
+                <div id="circle" className="size-36 sm:size-72 mx-auto my-[5vh] shadow-2xl rounded-full overflow-hidden relative">
                     {images.map((src, index) => (
                         <img src={src} key={index} alt={`Slide ${index}`} className="slide-img object-cover absolute inset-0 w-full h-full opacity-0" />
                     ))}
