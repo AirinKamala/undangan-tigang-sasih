@@ -36,7 +36,6 @@ export default function InfoBayi() {
                     start: 'top 80%',
                     end: 'top 50%',
                     toggleActions: 'play none none reverse',
-                    markers: true,
                 }
             });
 
@@ -47,7 +46,6 @@ export default function InfoBayi() {
                     start: 'top 80%',
                     end: 'top 50%',
                     toggleActions: 'play none none reverse',
-                    markers: true,
                 }
             });
             slides.forEach((slide) => {

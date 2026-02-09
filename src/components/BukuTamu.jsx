@@ -18,12 +18,12 @@ function BukuTamu() {
         gsap.from(bukuTamu.current, {
             y: 100, opacity: 0, duration: 1, ease: 'linear',
             scrollTrigger: {
-                trigger: bukuTamu.current, start: 'top 80%', end: 'top 50%', toggleActions: 'play none none reverse', markers: true,
+                trigger: bukuTamu.current, start: 'top 80%', end: 'top 50%', toggleActions: 'play none none reverse',
             }
         });
     }, bukuTamu);
 
-    const [listKomen, setListKomen] = useState([{ nama: 'Bu kadek', pesan: 'Rahayu', kehadiran: 'Hadir' }, { nama: 'Yan Dodi', pesan: 'Siap hadir', kehadiran: 'Hadir' },{ nama: 'Pak mang ', pesan: 'Ampura ten hadir', kehadiran: 'Tidak Hadir' }]);
+    const [listKomen, setListKomen] = useState([{ nama: 'Bu kadek', pesan: 'Rahayu', kehadiran: 'Hadir' }, { nama: 'Yan Dodi', pesan: 'Siap hadir', kehadiran: 'Hadir' },{ nama: 'Pak mang ', pesan: 'Ampura ten nyidng hadir', kehadiran: 'Tidak Hadir' }]);
     const addKomen = (e) => {
         e.preventDefault();
 
@@ -40,7 +40,7 @@ function BukuTamu() {
     return (
         <article ref={bukuTamu}>
             <form id="formBuku" onSubmit={addKomen} className="h-auto w-full bg-[#87CEEB] shadow-2xl text-lg mt-[20vw] rounded-md p-8 grid md:px-36">
-                <h2 className="paprika">Buku Tamu</h2>
+                <h2 className="style-script-regular">Buku tamu</h2>
                 <p className="paprika">Make a wish for those babies</p>
                 <input type="text" className="h-12" name="nama" id="nama" placeholder="Nama" required />
 
@@ -57,11 +57,11 @@ function BukuTamu() {
             <div id="comment" className="w-full md:px-24 py-8">
                 <ul>
                     {listKomen.map((komen, index) => (
-                        <li key={index} className="bg-[#87CEEB] paprika rounded-lg not-first:mt-4 w-full py-4 px-8 min-h-8 shadow-lg">
+                        <li key={index} className="bg-[#EDF2F4] paprika rounded-lg not-first:mt-4 w-full py-4 px-8 min-h-8 shadow-lg">
                             <p className="text-sm flex justify-between">
                                 <span>{komen.nama}</span><span>{komen.kehadiran}</span>
                             </p>
-                            <hr className="border-teal-600 border-2" />
+                            <hr className="border-teal-600/30 border-2" />
                             <p className="text-lg pl-4 ">{
                                 trauncatedText(komen.pesan)
                             }</p>

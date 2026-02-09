@@ -12,7 +12,7 @@ function Kitab() {
     useGSAP(() => {
         gsap.from(containerKitab.current, {
             y: 100, opacity:0, duration: 1, ease: "linear",
-            scrollTrigger: { trigger: containerKitab.current, start: 'top 80%', end: 'top 50%', toggleActions: 'play none none reverse', markers: true }
+            scrollTrigger: { trigger: containerKitab.current, start: 'top 80%', end: 'top 50%', toggleActions: 'play none none reverse', }
         });
     }, containerKitab);
 
@@ -54,7 +54,7 @@ function Detail() {
     useGSAP(() => {
         gsap.from(containerDetail.current, {
             y: 100, opacity:0, duration: 1, ease: "linear",
-            scrollTrigger: { trigger: containerDetail.current, start: 'top 80%', end: 'top 50%', toggleActions: 'play none none reverse', markers: true }
+            scrollTrigger: { trigger: containerDetail.current, start: 'top 80%', end: 'top 50%', toggleActions: 'play none none reverse', }
         });
     }, containerDetail);
 
@@ -64,7 +64,7 @@ function Detail() {
             <div id="container2" className="flex justify-center-safe p-8">
                 <div className="w-52 h-52 shadow-2xl grid items-center m-2 bg-white rounded-2xl">
                     <i className="fa-solid fa-calendar text-[60pt] text-[#2090EB] mx-auto"></i>
-                    <p className="font-bold paprika text-[16pt]">1 Februari 2026</p>
+                    <p className="font-bold paprika text-[16pt]">11 Februari 2026</p>
                 </div>
                 <div className="w-52 h-52 shadow-2xl grid items-center m-2 bg-white rounded-2xl">
                     <i className="fa-solid fa-clock text-[60pt] text-[#2090EB] mx-auto"></i>
@@ -73,7 +73,7 @@ function Detail() {
             </div>
 
             <div id="maps">
-                <div className=" size-fit shadow-2xl grid mx-auto p-4 bg-white rounded-2xl">
+                <div className=" size-fit shadow-2xl grid mx-auto mt-20 p-4 bg-white rounded-2xl">
                     <h3 className=" mb-4 paprika">Location </h3>
                     <Maps />
                     <p className="paprika text-[12pt] p-4">Jl. Yeh Gangga I, Kec. Tabanan, <br /> Kabupaten Tabanan, Bali</p>
@@ -88,10 +88,10 @@ function Coundown() {
     useGSAP(() => {
         gsap.from(containerTimer.current, {
             y: 100, opacity:0, duration: 1, ease: "linear",
-            scrollTrigger: { trigger: containerTimer.current, start: 'top 80%', end: 'top 50%', toggleActions: 'play none none reverse', markers: true }
+            scrollTrigger: { trigger: containerTimer.current, start: 'top 80%', end: 'top 50%', toggleActions: 'play none none reverse', }
         });
     }, containerTimer);
-    const targetTgl = new Date('Feb 1, 2026 12:00:00').getTime();
+    const targetTgl = new Date('Feb 11, 2026 12:00:00').getTime();
 
     const [timeLeft, setTimeLeft] = useState(() => {
         const difference = targetTgl - new Date().getTime();

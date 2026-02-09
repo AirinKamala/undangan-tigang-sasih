@@ -3,8 +3,21 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import threeKitten from './assetImage/threeKitten.jpeg'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+
 gsap.registerPlugin(ScrollToPlugin);
 gsap.registerPlugin(useGSAP);
+import ratuAnom from './assetImage/ratuAnom.mp3'
+
+
+function AudioPlay() {
+   
+  return (<button className="no-hover fixed bg-amber-800 p-2 size-16 justify-center align-baseline rounded-full left-[2%] bottom-2 border-4 animate-[spin_5s_linear_infinite] border-gray-900 z-20">
+    <i className="fa-solid fa-music text-2xl text-white">
+      <audio src={ratuAnom} autoPlay loop>
+      </audio>
+    </i>
+  </button>);
+}
 
 function Navbar() {
     return (
@@ -49,7 +62,7 @@ export default function FirstPage({ nama }) {
     const [isOpen, setIsOpen] = useState(false);
     const boxRef = useRef();
     const handleScroll = () => {
-        gsap.to(window, {duration:2, scrollTo: '#info-bayi', ease: 'power2.inOut'});
+        gsap.to(window, { duration: 2, scrollTo: '#info-bayi', ease: 'power2.inOut' });
     }
     useEffect(() => {
         let gsapvar = gsap.context(() => {
@@ -63,6 +76,8 @@ export default function FirstPage({ nama }) {
 
     return (
         <>
+        
+        {isOpen && (<AudioPlay />)}
             <header className="h-screen w-screen bg-[rgb(245, 245, 220)]" ref={boxRef}>
                 <div id="img-baby" className="absolute z-0 inset-0 overflow-hidden">
                     <img
@@ -89,10 +104,11 @@ export default function FirstPage({ nama }) {
                     </>
                     )}
                     {isOpen && (<>
-                        <p className="font-bold max-w-fit text-center text-2xl flex mx-auto border-b-amber-50 border-b-3">1 Februari 2026</p>
+                        <p className="font-bold max-w-fit text-center text-2xl flex mx-auto border-b-amber-50 border-b-3">11 Februari 2026</p>
                         <a href="#" className=" mx-auto text-4xl mt-16 animate-bounce">
                             <i onClick={handleScroll} class="fa-solid fa-arrow-down"></i>
                         </a>
+                     
                     </>
                     )}
 
