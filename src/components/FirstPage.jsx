@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import threeKitten from './assetImage/threeKitten.webp'
+import threeKittenBig from './assetImage/threeKittenBig.webp'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
 gsap.registerPlugin(ScrollToPlugin);
@@ -10,13 +10,13 @@ import ratuAnom from './assetImage/ratuAnom.mp3'
 
 
 function AudioPlay() {
-   
-  return (<button className="no-hover fixed bg-amber-800 p-2 size-16 justify-center align-baseline rounded-full left-[2%] bottom-2 border-4 animate-[spin_5s_linear_infinite] border-gray-900 z-20">
-    <i className="fa-solid fa-music text-2xl text-white">
-      <audio src={ratuAnom} autoPlay loop>
-      </audio>
-    </i>
-  </button>);
+
+    return (<button className="text-2xl text-white font-clack no-hover fixed bg-amber-800 p-2 size-16 justify-center align-baseline rounded-full left-[2%] bottom-2 border-4 animate-[spin_5s_linear_infinite] border-gray-900 z-20">
+        &#9836;
+            <audio src={ratuAnom} autoPlay loop>
+            </audio>
+        
+    </button>);
 }
 
 function Navbar() {
@@ -76,14 +76,16 @@ export default function FirstPage({ nama }) {
 
     return (
         <>
-        
-        {isOpen && (<AudioPlay />)}
+
+            {isOpen && (<AudioPlay />)}
             <header className="h-screen w-screen bg-[rgb(245, 245, 220)]" ref={boxRef}>
                 <div id="img-baby" className="absolute z-0 inset-0 overflow-hidden">
                     <img
                         className="absolute h-screen w-auto md:w-full md:h-auto object-cover object-center md:object-bottom"
-                        src={threeKitten}
-                        alt=""
+                        src={threeKittenBig}
+                        alt="thereKitten"
+                        loading="eager"
+                        fetchPriority="high"
                     />
                     <div
                         id="fade"
@@ -98,7 +100,9 @@ export default function FirstPage({ nama }) {
                         </p>
                         <button onClick={() => setIsOpen(true)}
                             className="zoom-btn bg-amber-400 duration-150 ease-in-out text-black w-48 flex justify-center p-4 self-center m-4 rounded-2xl">
-                            <i class="fa-duotone fa-solid fa-envelope-open my-[0.2rem]"></i>{" "}
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20px" className="mr-2">
+                                <path d="M64.4 175.8L256 33.9 447.6 175.8 289.5 293c-9.7 7.2-21.4 11-33.5 11s-23.8-3.9-33.5-11L64.4 175.8zM256-32c-12.1 0-23.8 3.9-33.5 11L25.9 124.7C9.6 136.8 0 155.8 0 176.1L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-239.9c0-20.3-9.6-39.4-25.9-51.4L289.5-21c-9.7-7.2-21.4-11-33.5-11z" />
+                            </svg>
                             Open Invitation
                         </button>
                     </>
@@ -106,9 +110,9 @@ export default function FirstPage({ nama }) {
                     {isOpen && (<>
                         <p className="font-bold max-w-fit text-center text-2xl flex mx-auto border-b-amber-50 border-b-3">11 Februari 2026</p>
                         <a href="#" className=" mx-auto text-4xl mt-16 animate-bounce">
-                            <i onClick={handleScroll} class="fa-solid fa-arrow-down"></i>
+                            <span onClick={handleScroll} className="text-[40pt]" > &darr; </span>
                         </a>
-                     
+
                     </>
                     )}
 

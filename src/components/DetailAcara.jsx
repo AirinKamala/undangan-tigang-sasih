@@ -11,7 +11,7 @@ function Kitab() {
 
     useGSAP(() => {
         gsap.from(containerKitab.current, {
-            y: 100, opacity:0, duration: 1, ease: "linear",
+            y: 100, opacity: 0, duration: 1, ease: "linear",
             scrollTrigger: { trigger: containerKitab.current, start: 'top 80%', end: 'top 50%', toggleActions: 'play none none reverse', }
         });
     }, containerKitab);
@@ -37,7 +37,7 @@ function Kitab() {
 function Maps() {
     return (
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31560.312847328354!2d115.06953540000002!3d-8.592238649999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23738397832e5%3A0x3825e71b720cf6f5!2sPantai%20Yeh%20Gangga!5e0!3m2!1sen!2sid!4v1768144075656!5m2!1sen!2sid"
-            
+
             style={{ border: 0 }}
             className="mx-auto w-[90%]"
             allowfullscreen=""
@@ -53,7 +53,7 @@ function Detail() {
 
     useGSAP(() => {
         gsap.from(containerDetail.current, {
-            y: 100, opacity:0, duration: 1, ease: "linear",
+            y: 100, opacity: 0, duration: 1, ease: "linear",
             scrollTrigger: { trigger: containerDetail.current, start: 'top 80%', end: 'top 50%', toggleActions: 'play none none reverse', }
         });
     }, containerDetail);
@@ -63,11 +63,12 @@ function Detail() {
             <h2 className="style-script-regular">Acara Kami</h2>
             <div id="container2" className="flex justify-center-safe p-8">
                 <div className="w-52 h-52 shadow-2xl grid items-center m-2 p-2 bg-white rounded-2xl">
-                    <i className="fa-solid fa-calendar text-[40pt] sm:text-[60pt] text-[#2090EB] mx-auto"></i>
+                    <span className=" text-[40pt] sm:text-[48pt] text-[#2090EB] mx-auto">📆</span>
                     <p className="font-bold paprika text-[12pt] sm:text-[16pt]">11 Februari 2026</p>
                 </div>
                 <div className="w-52 h-52 shadow-2xl grid items-center m-2 p-2 bg-white rounded-2xl">
-                    <i className="fa-solid fa-clock text-[40pt] sm:text-[60pt] text-[#2090EB] mx-auto"></i>
+                    <span className=" text-[40pt] sm:text-[48pt] text-[#2090EB] mx-auto">🕛</span>
+
                     <p className="font-bold paprika text-[12pt] sm:text-[16pt]">12:00 - Selesai </p>
                 </div>
             </div>
@@ -87,7 +88,7 @@ function Coundown() {
     const containerTimer = useRef(null);
     useGSAP(() => {
         gsap.from(containerTimer.current, {
-            y: 100, opacity:0, duration: 1, ease: "linear",
+            y: 100, opacity: 0, duration: 1, ease: "linear",
             scrollTrigger: { trigger: containerTimer.current, start: 'top 80%', end: 'top 50%', toggleActions: 'play none none reverse', }
         });
     }, containerTimer);
