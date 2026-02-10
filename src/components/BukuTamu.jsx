@@ -48,7 +48,7 @@ function BukuTamu() {
     }
 
     return (
-        <article ref={bukuTamu}>
+        <article ref={bukuTamu} loading="lazy">
             <form id="formBuku" onSubmit={addKomen} className="h-auto w-full bg-[#87CEEB] shadow-2xl text-lg mt-[20vw] rounded-md p-8 grid md:px-36">
                 <h2 className="style-script-regular">Buku tamu</h2>
                 <p className="paprika">Make a wish for those babies</p>

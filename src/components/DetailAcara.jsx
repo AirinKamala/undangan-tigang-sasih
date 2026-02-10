@@ -37,7 +37,7 @@ function Kitab() {
 function Maps() {
     return (
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31560.312847328354!2d115.06953540000002!3d-8.592238649999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23738397832e5%3A0x3825e71b720cf6f5!2sPantai%20Yeh%20Gangga!5e0!3m2!1sen!2sid!4v1768144075656!5m2!1sen!2sid"
-
+            title="maps location"
             style={{ border: 0 }}
             className="mx-auto w-[90%]"
             allowfullscreen=""
@@ -140,7 +140,7 @@ function Coundown() {
     }
 
     return (
-        <section ref={containerTimer}>
+        <section ref={containerTimer} loading="lazy">
             <h4 className="pt-8 mt-8 paprika text-center flex justify-evenly"> Acara Dimulai Dalam </h4>
             <h4 className="mt-8 paprika text-center flex justify-evenly">
                 <span className="self-center text-sm sm:text-2xl " id="days">{String(timeLeft.days).padStart(2, '0')}<br /> Days</span>:

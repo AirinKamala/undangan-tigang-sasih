@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import threeKittenBig from './assetImage/threeKittenBig.webp'
+import threeKitten from './assetImage/threeKitten.webp'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
 gsap.registerPlugin(ScrollToPlugin);
@@ -11,11 +12,11 @@ import ratuAnom from './assetImage/ratuAnom.mp3'
 
 function AudioPlay() {
 
-    return (<button className="text-2xl text-white font-clack no-hover fixed bg-amber-800 p-2 size-16 justify-center align-baseline rounded-full left-[2%] bottom-2 border-4 animate-[spin_5s_linear_infinite] border-gray-900 z-20">
+    return (<button className="text-2xl text-white font-black no-hover fixed bg-amber-800 p-2 size-16 justify-center align-baseline rounded-full left-[2%] bottom-2 border-4 animate-[spin_5s_linear_infinite] border-gray-900 z-20">
         &#9836;
-            <audio src={ratuAnom} autoPlay loop>
-            </audio>
-        
+        <audio src={ratuAnom} autoPlay loop>
+        </audio>
+
     </button>);
 }
 
@@ -79,10 +80,16 @@ export default function FirstPage({ nama }) {
 
             {isOpen && (<AudioPlay />)}
             <header className="h-screen w-screen bg-[rgb(245, 245, 220)]" ref={boxRef}>
-                <div id="img-baby" className="absolute z-0 inset-0 overflow-hidden">
+                <picture id="img-baby" className="absolute z-0 inset-0 overflow-hidden">
+                    <source
+                        media="(max-width: 600px)"
+                        srcSet={threeKitten}
+                    />
                     <img
                         className="absolute h-screen w-auto md:w-full md:h-auto object-cover object-center md:object-bottom"
                         src={threeKittenBig}
+                        width="400"  
+                        height="600" 
                         alt="thereKitten"
                         loading="eager"
                         fetchPriority="high"
@@ -91,7 +98,7 @@ export default function FirstPage({ nama }) {
                         id="fade"
                         className="relative z-3 h-full bg-linear-to-t from-gray-950 via-70% via-transparent to-transparent brightness- text-white"
                     ></div>
-                </div>
+                </picture>
                 <div id="desc" className="absolute z-2 h-[80vh] bottom-0 w-screen flex flex-col justify-center text-white">
                     <h1 className="fade-in style-script-regular text-[64pt] text-center">Tigang Sasih</h1>
                     {!isOpen && (<>
